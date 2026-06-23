@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+html,
+body {
+  @apply antialiased text-gray-900;
+}
+
+/* Focus outline for accessibility */
+:focus-visible {
+  outline: 2px solid theme('colors.primary');
+  outline-offset: 2px;
+}
